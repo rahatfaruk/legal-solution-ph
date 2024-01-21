@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Legal solution site</title>
 
+  <!-- gfont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- tailwind & daisyui -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -24,7 +29,7 @@
     }
   </style>
 </head>
-<body>
+<body style="font-family: 'EB Garamond', serif;">
   <header class="px-4">
     <nav class="navbar bg-base-100 container mx-auto p-0">
       <div class="flex w-full lg:w-1/2 justify-between">
@@ -70,6 +75,85 @@
               <input type="text" placeholder="Type here" class="input py-3 flex-1 text-gray-700" />
               <button class="btn bg-primary border-transparent">Get Started</button>
             </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- practice-area-sect -->
+    <section class="px-4 py-8">
+      <div class="container mx-auto">
+        <!-- content -->
+        <article class="max-w-md text-center mx-auto mb-4">
+          <h1 class="text-3xl md:text-4xl font-bold mb-3">We Provide Effective Legal Solutions</h1>
+          <p class="md:text-lg">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </article>
+        <div class="cards grid md:grid-cols-2 lg:grid-cols-3">
+          <!-- card -->
+          <div class="card border-b md:border-r rounded-none">
+            <figure class="px-10 pt-10">
+              <img src="./images/business.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Business Law</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <button><img src="./images/arrow.png" alt=""></button>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card border-b lg:border-r rounded-none bg-stone-100">
+            <figure class="px-10 pt-10">
+              <img src="./images/criminal.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Criminal Law</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <button><img src="./images/arrow.png" alt=""></button>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card md:border-r lg:border-r-0 lg:border-b rounded-none">
+            <figure class="px-10 pt-10">
+              <img src="./images/child.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Child Support</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <button><img src="./images/arrow.png" alt=""></button>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card hidden md:flex rounded-none">
+            <figure class="px-10 pt-10">
+              <img src="./images/education.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Education Law</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <button><img src="./images/arrow.png" alt=""></button>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card hidden lg:flex lg:border-x bg-stone-100 rounded-none">
+            <figure class="px-10 pt-10">
+              <img src="./images/divorce.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Divorce Law</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <button><img src="./images/arrow.png" alt=""></button>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card hidden lg:flex rounded-none">
+            <figure class="px-10 pt-10">
+              <img src="./images/tax.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Tax Law</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <button><img src="./images/arrow.png" alt=""></button>
+            </div>
           </div>
         </div>
       </div>
