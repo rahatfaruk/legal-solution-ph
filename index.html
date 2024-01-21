@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal solution site</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#B68C5A',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-bg {
+      background: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,.5)), url('./images/banner.png') no-repeat center/cover;
+    }
+  </style>
+</head>
+<body>
+  <header class="px-4">
+    <nav class="navbar bg-base-100 container mx-auto p-0">
+      <div class="flex w-full lg:w-1/2 justify-between">
+        <!-- title -->
+        <a class="btn btn-ghost text-xl">daisyUI</a>
+        <!-- sm:menu-icon with small-menu -->
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
+            <li><a>Item 1</a></li>
+            <li><a>Item 3</a></li>
+            <li><a class="btn h-auto min-h-fit">Button</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- lg: menu -->
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Item 1</a></li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+
+      <!-- lg:action button -->
+      <div class="navbar-end hidden lg:flex">
+        <a class="btn">Button</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ## banner-sect -->
+    <section class="banner p-4">
+      <div class="hero hero-bg container mx-auto px-4 py-16 text-white rounded-lg">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-3xl md:text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+            <p class="py-6 md:text-lg text-gray-200">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <form class="flex gap-4 flex-col md:flex-row">
+              <input type="text" placeholder="Type here" class="input py-3 flex-1 text-gray-700" />
+              <button class="btn bg-primary border-transparent">Get Started</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
